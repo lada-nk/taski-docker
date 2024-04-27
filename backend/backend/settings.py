@@ -13,7 +13,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['taski-ladank.sytes.net']
 
-
 # Application definition
 
 INSTALLED_APPS = [
