@@ -43,7 +43,7 @@ jobs:
         cd backend/
         python manage.py test
   
-  
+
   build_and_push_to_docker_hub:
     name: Push Docker image to DockerHub
     runs-on: ubuntu-latest
@@ -65,7 +65,6 @@ jobs:
           push: true
           tags: ladank/taski_backend:latest
   
-
   frontend_tests:
     runs-on: ubuntu-latest
     steps:
