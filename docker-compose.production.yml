@@ -31,8 +31,8 @@ services:
   gateway:
     build: ./gateway/
     env_file: .env
-    depends_on:
-      - backend
+    # depends_on:
+    #   - backend
     volumes:
       - static_volume:/staticfiles
     ports:
