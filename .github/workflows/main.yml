@@ -66,6 +66,7 @@ jobs:
           push: true
           tags: ladank/taski_backend:latest
   
+  
   frontend_tests:
     runs-on: ubuntu-latest
     steps:
