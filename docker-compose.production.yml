@@ -29,10 +29,10 @@ services:
       - static_volume:/frontend_static
   
   gateway:
-    build: ./gateway/
+    image: ladank/taski_gateway
     env_file: .env
-    # depends_on:
-    #   - backend
+    depends_on:
+      - backend
     volumes:
       - static_volume:/staticfiles
     ports:
