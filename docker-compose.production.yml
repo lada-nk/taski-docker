@@ -17,7 +17,7 @@ services:
     depends_on:
       - db
     volumes:
-      - static:/backend_static
+      - static_volume:/backend_static
     environment:
       - SECRET_KEY
   
@@ -34,6 +34,6 @@ services:
     depends_on:
       - backend
     volumes:
-      - static:/staticfiles
+      - static_volume:/staticfiles
     ports:
       - 8000:80
